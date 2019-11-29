@@ -46,4 +46,20 @@
       font-size: 1.4rem;
     }
   }
+
+  .home-lessons {
+    font-size: 2em;
+    margin-bottom: 14em;
+    font-family: 'Josefin Sans', sans-serif;
+    ol, ul {
+      list-style-type: none;
+    }
+    li {
+      margin-bottom: 5em;
+      span {
+        border-bottom: 2px solid red;
+        line-height: 2em;
+      }
+    }
+  }
 }
