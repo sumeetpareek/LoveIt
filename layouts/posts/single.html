@@ -11,7 +11,7 @@
         <h1 class="post-title animated flipInX">{{ .Title }}</h1>
 
         <div class="post-meta">
-            <div class="post-meta-main">
+            <!-- <div class="post-meta-main">
                 <a class="author" href="{{.Site.BaseURL }}" rel="author"><i class="fas fa-user-circle fa-fw"></i>{{ $author }}&nbsp;</a>
                 {{ with .Params.categories -}}
                     <span class="post-category">
@@ -24,16 +24,21 @@
                         {{ end }}
                     </span>
                 {{- end }}
-            </div>
+            </div> -->
             <div class="post-meta-other">
-                <i class="far fa-calendar-alt fa-fw"></i><time datetime={{ $publish_date }}>{{ $publish_date }}</time>&nbsp;
-                <i class="fas fa-pencil-alt fa-fw"></i>{{ T "wordCount" .WordCount }}&nbsp;
-                <i class="far fa-clock fa-fw"></i>{{ T "readingTime" .ReadingTime }}&nbsp;
-                {{- if eq (getenv "HUGO_ENV") "production" | and .Site.Params.valine.enable | and .Site.Params.valine.visitor -}}
+                <!-- <i class="far fa-calendar-alt fa-fw"></i> -->
+                <time datetime={{ $publish_date }}>{{ $publish_date }}</time>&nbsp;
+                
+                <!-- <i class="fas fa-pencil-alt fa-fw"></i>{{ T "wordCount" .WordCount }}&nbsp; -->
+                
+                <!-- <i class="far fa-clock fa-fw"></i>{{ T "readingTime" .ReadingTime }}&nbsp; -->
+                
+                <!-- {{- if eq (getenv "HUGO_ENV") "production" | and .Site.Params.valine.enable | and .Site.Params.valine.visitor -}}
                     <span id="{{ .RelPermalink | relURL }}" class="leancloud_visitors" data-flag-title="{{ .Title }}">
                         <i class="far fa-eye fa-fw"></i>{{ T "pageviews" | safeHTML }}
                     </span>&nbsp;
-                {{- end -}}
+                {{- end -}} -->
+                
             </div>
         </div>
 

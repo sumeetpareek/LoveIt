@@ -43,7 +43,7 @@ other = "Theme - "
 
 # === posts/single.html ===
 [toc]
-other = "Table of Contents"
+other = "Contents"
 
 [publish]
 other = "published on"
